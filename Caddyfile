@@ -1,0 +1,6 @@
+:2020
+file_server {
+    root /build
+    index slides.html
+}
+encode zstd gzip
