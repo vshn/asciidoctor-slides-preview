@@ -9,13 +9,14 @@ cp /Guardfile /build/Guardfile
 
 # Launch Caddy web server
 echo ""
-echo " _____________________________________________________________________"
-echo "|                                                                     |"
-echo "| Open http://localhost:2020 in your browser to see the slides        |"
-echo "|                                                                     |"
-echo "| IMPORTANT! LIVE RELOADING REQUIRES A BROWSER PLUGIN!                |"
-echo "| More info here: https://github.com/vshn/slides-preview#livereload   |"
-echo "|_____________________________________________________________________|"
+echo " ________________________________________________________________________________________"
+echo "|                                                                                        |"
+echo "| Open http://localhost:2020 in your browser to see the slides                           |"
+echo "|                                                                                        |"
+echo "| IMPORTANT! LIVE RELOADING REQUIRES A BROWSER PLUGIN!                                   |"
+echo "| More info here: https://git.vshn.net/education/slides-preview#user-content-livereload  |"
+echo "|________________________________________________________________________________________|"
 echo ""
 caddy start
 guard --no-interactions --group=slides
+
