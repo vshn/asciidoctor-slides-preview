@@ -1,4 +1,4 @@
-FROM vshn/asciidoctor-slides:1.11
+FROM vshn/asciidoctor-slides:1.12
 
 RUN addgroup -S preview && adduser -S preview -G preview
 RUN mkdir -p /presentation && chown -R preview:preview /presentation
