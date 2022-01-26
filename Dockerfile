@@ -1,4 +1,4 @@
-FROM vshn/asciidoctor-slides:1.12
+FROM vshn/asciidoctor-slides:1.13
 
 RUN addgroup -S preview && adduser -S preview -G preview
 RUN mkdir -p /presentation && chown -R preview:preview /presentation
@@ -13,7 +13,7 @@ WORKDIR /build
 RUN apk update && apk add curl unzip build-base ruby-dev ruby-rdoc libnotify
 RUN gem install guard guard-livereload guard-shell libnotify
 
-RUN curl --silent --location https://github.com/caddyserver/caddy/releases/download/v2.1.1/caddy_2.1.1_linux_amd64.tar.gz -o /build/caddy.tar.gz
+RUN curl --silent --location https://github.com/caddyserver/caddy/releases/download/v2.4.6/caddy_2.4.6_linux_amd64.tar.gz -o /build/caddy.tar.gz
 RUN tar -zxvf /build/caddy.tar.gz
 RUN mv /build/caddy /usr/local/bin/caddy
 RUN rm /build/caddy.tar.gz
