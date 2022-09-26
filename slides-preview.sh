@@ -18,5 +18,4 @@ echo "| More info here: https://git.vshn.net/education/slides-preview#user-conte
 echo "|________________________________________________________________________________________|"
 echo ""
 caddy start
-guard --no-interactions --group=slides
-
+guard -p --no-interactions --group=slides
