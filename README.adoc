@@ -4,6 +4,14 @@ This tool can be used to quickly preview slides created with Asciidoctor and Rev
 
 The image is available in https://hub.docker.com/r/vshn/slides-preview[Docker Hub].
 
+== Asciidoctor Slides Infrastructure
+
+The following projects are part of the Asciidoctor Slides infrastructure:
+
+* https://git.vshn.net/education/asciidoctor-slides[Generator] encapsulating a Node.js application driving the creation of the `slides.html` HTML file
+* https://git.vshn.net/education/revealjs-template[Cookiecutter] offering a simple mechanism to generate new presentation slide projects
+* https://git.vshn.net/education/slides-preview[Preview] allowing the live preview of slides on `localhost:2020` (this project)
+
 == How to use
 
 Run the following command on top of any project containing Asciidoctor + Reveal.js slides:
