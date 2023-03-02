@@ -1,4 +1,4 @@
-FROM dockerhub.vshn.net/vshn/asciidoctor-slides:1.16.0
+FROM dockerhub.vshn.net/vshn/asciidoctor-slides:1.17.0
 
 RUN addgroup -S preview && adduser -S preview -G preview
 RUN mkdir -p /presentation && chown -R preview:preview /presentation
