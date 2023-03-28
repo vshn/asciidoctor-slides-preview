@@ -2,8 +2,6 @@
 
 This tool can be used to quickly preview slides created with Asciidoctor and Reveal.js.
 
-The image is available in https://hub.docker.com/r/vshn/slides-preview[Docker Hub].
-
 == Asciidoctor Slides Infrastructure
 
 The following projects are part of the Asciidoctor Slides infrastructure:
