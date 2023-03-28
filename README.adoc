@@ -1,4 +1,4 @@
-= Asciidoctor + Reveal.js Slides Preview Tool
+= Asciidoctor Slides Preview
 
 This tool can be used to quickly preview slides created with Asciidoctor and Reveal.js.
 
