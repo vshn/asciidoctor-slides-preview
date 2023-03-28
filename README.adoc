@@ -8,15 +8,18 @@ The image is available in https://hub.docker.com/r/vshn/slides-preview[Docker Hu
 
 The following projects are part of the Asciidoctor Slides infrastructure:
 
-* https://git.vshn.net/education/asciidoctor-slides[Generator] encapsulating a Node.js application driving the creation of the `slides.html` HTML file
-* https://git.vshn.net/education/revealjs-template[Cookiecutter] offering a simple mechanism to generate new presentation slide projects
-* https://git.vshn.net/education/slides-preview[Preview] allowing the live preview of slides on `localhost:2020` (this project)
+* https://github.com/vshn/asciidoctor-slides[Generator] encapsulating a Node.js application driving the creation of the `slides.html` HTML file
+* https://github.com/vshn/asciidoctor-slides-cookiecutter[Cookiecutter] offering a simple mechanism to generate new presentation slide projects
+* https://github.com/vshn/asciidoctor-slides-preview[Preview] allowing the live preview of slides on `localhost:2020` (this project)
 
 == How to use
 
 Run the following command on top of any project containing Asciidoctor + Reveal.js slides:
 
-`docker run --user "$(id -u)" --rm --publish 35729:35729 --publish 2020:2020 --volume "${PWD}":/build vshn/slides-preview:$VERSION`
+[source,bash]
+--
+docker run --user "$(id -u)" --rm --publish 35729:35729 --publish 2020:2020 --volume "${PWD}":/build vshn/slides-preview:$VERSION
+--
 
 Open the URL http://localhost:2020 to see the slides.
 
